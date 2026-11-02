@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Your custom theme (this replaces the old tailwind.config object) */
+@theme {
+  /* Colors from your original config */
+  --color-prairie-900: #1F2A1D;
+  --color-prairie-700: #33452C;
+  --color-sage-600: #5C7A52;
+  --color-sage-500: #6E8C63;
+  --color-limestone-100: #EFEAE0;
+  --color-paper: #FBFAF6;
+  --color-sunflower-500: #D9A21B;
+  --color-clay-700: #8A4B2F;
+
+  /* Fonts */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Text sizes
+  --text-4xl: 2.5rem;  default is ~2.5rem */
+
+  /* Shadows */
+  --shadow-soft: 0 2px 8px rgba(31, 42, 29, 0.06);
+  --shadow-lift: 0 8px 24px rgba(31, 42, 29, 0.08);
+
+  /* Border radius */
+  --radius-hero: 20px;
+
+  /* Max width */
+  --max-width-prose: 72ch;
+  --max-width-prose-sm: 52ch;
+}
+
+/* Optional: base heading styles (easy place to tweak sizes) */
+@layer base {
+  h1 {
+    @apply font-display font-semibold leading-tight;
+  }
+  h2 {
+    @apply font-display font-semibold leading-tight;
+  }
+  h3 {
+    @apply font-display font-semibold;
+  }
+}

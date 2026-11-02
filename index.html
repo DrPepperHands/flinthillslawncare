@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Flint Hills Lawn Care | Wichita-Area Lawn, Landscape & Irrigation</title>
+<link href="./dist/output.css" rel="stylesheet">
+<meta name="description" content="Family-owned, firefighter-founded lawn care serving Wichita, Derby, Andover, Bel Aire, Maize & Rose Hill. Mowing, fertilization, irrigation & landscaping. Free estimates. 4.8★ on Google." />
+
+<!-- Fonts: preconnect + display=swap -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    :root { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+  }
+  /* Scroll reveal (motion-meaning: content enters from below = deeper) */
+  .reveal { opacity: 0; transform: translateY(16px); transition: opacity .4s ease-out, transform .4s ease-out; }
+  .reveal.in { opacity: 1; transform: none; }
+  /* Visible focus rings everywhere */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+    outline: 3px solid #D9A21B; outline-offset: 2px; border-radius: 4px;
+  }
+  /* Tallgrass horizon signature rule */
+  .tallgrass { height: 26px; width: 100%; display: block; }
+  body { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+</style>
+</head>
+
+<body class="bg-paper text-prairie-900 font-sans antialiased">
+
+<!-- Skip link (accessibility) -->
+<a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:z-[1000] focus:top-3 focus:left-3 focus:bg-prairie-900 focus:text-paper focus:px-4 focus:py-2 focus:rounded-lg">Skip to main content</a>
+
+<!-- ============ HEADER (sticky) ============ -->
+<header class="sticky top-0 z-40 bg-paper/90 backdrop-blur border-b border-limestone-100">
+  <nav aria-label="Primary" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-2 shrink-0" aria-label="Flint Hills Lawn Care home">
+        <span class="font-display text-xl font-600 text-prairie-900 leading-none">Flint&nbsp;Hills</span>
+        <span class="hidden sm:inline text-[11px] uppercase tracking-[0.18em] text-sage-600 border-l border-limestone-100 pl-2">Lawn&nbsp;Care</span>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-7 text-sm font-500">
+        <li><a href="#services" class="hover:text-sage-600 transition-colors">Services</a></li>
+        <li><a href="#work" class="hover:text-sage-600 transition-colors">Our Work</a></li>
+        <li><a href="#about" class="hover:text-sage-600 transition-colors">About</a></li>
+        <li><a href="#areas" class="hover:text-sage-600 transition-colors">Service Area</a></li>
+        <li><a href="#reviews" class="hover:text-sage-600 transition-colors">Reviews</a></li>
+      </ul>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="tel:+13163643913" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-600 text-prairie-900 hover:text-sage-600 transition-colors">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+          (316) 364-3913
+        </a>
+        <a href="#estimate" class="inline-flex items-center rounded-full bg-sage-600 px-4 py-2.5 text-sm font-600 text-paper shadow-soft hover:bg-sage-500 transition-colors">Free Estimate</a>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-lg text-prairie-900" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden pb-4">
+      <ul class="flex flex-col gap-1 text-base font-500">
+        <li><a href="#services" class="block px-2 py-3 rounded-lg hover:bg-limestone-100">Services</a></li>
+        <li><a href="#work" class="block px-2 py-3 rounded-lg hover:bg-limestone-100">Our Work</a></li>
+        <li><a href="#about" class="block px-2 py-3 rounded-lg hover:bg-limestone-100">About</a></li>
+        <li><a href="#areas" class="block px-2 py-3 rounded-lg hover:bg-limestone-100">Service Area</a></li>
+        <li><a href="#reviews" class="block px-2 py-3 rounded-lg hover:bg-limestone-100">Reviews</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <span id="top"></span>
+
+  <!-- ============ HERO ============ -->
+  <section class="relative isolate">
+    <!-- Photo: wide ranch w/ diagonal stripes -->
+    <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a78704780e0e62b13b0842d_hero-striped-lawn.webp" alt="A large ranch home in the Wichita area with a professionally mowed lawn showing crisp diagonal mowing stripes under a big Kansas sky." width="2048" height="1152" class="absolute inset-0 -z-10 h-full w-full object-cover" fetchpriority="high" />
+    <!-- Prairie scrim for contrast (WCAG AA over photo) -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-prairie-900/85 via-prairie-900/60 to-prairie-900/20"></div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
+      <div class="max-w-2xl text-paper">
+        <p class="inline-flex items-center gap-2 text-xs sm:text-sm uppercase tracking-[0.18em] text-sunflower-500 font-600">
+          <span class="w-2 h-2 rounded-full bg-sunflower-500"></span>
+          Family-owned in Andover · Since 2018
+        </p>
+        <h1 class="mt-4 font-display text-4xl sm:text-5xl lg:text-6xl font-600 leading-[1.05]">
+          The Kansas crew that keeps your yard mowed, healthy&nbsp;&amp; handled.
+        </h1>
+        <p class="mt-5 max-w-prose text-base sm:text-lg text-paper/90 leading-relaxed">
+          Firefighter-founded and family-run, we care for lawns and landscapes across the Wichita metro — mowing, fertilization, irrigation, and cleanups. And we haul your clippings off, not just mulch and leave.
+        </p>
+        <div class="mt-8 flex flex-wrap items-center gap-3">
+          <a href="#estimate" class="inline-flex items-center gap-2 rounded-full bg-sunflower-500 px-6 py-3.5 text-base font-600 text-prairie-900 shadow-lift hover:brightness-105 transition">
+            Get a Free Estimate
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#work" class="inline-flex items-center gap-2 rounded-full border-2 border-paper/70 px-6 py-3.5 text-base font-600 text-paper hover:bg-paper/10 transition">
+            See Our Work
+          </a>
+        </div>
+
+        <!-- Trust row -->
+        <div class="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-paper/90">
+          <div class="flex items-center gap-2">
+            <div class="flex" aria-hidden="true">
+              <!-- 5 stars -->
+              <svg class="w-4 h-4 text-sunflower-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg class="w-4 h-4 text-sunflower-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg class="w-4 h-4 text-sunflower-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg class="w-4 h-4 text-sunflower-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+              <svg class="w-4 h-4 text-sunflower-500" viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+            </div>
+            <span class="font-600"><span class="sr-only">Rated </span>4.8</span>
+            <span class="text-paper/70">· 39 Google reviews</span>
+          </div>
+          <span class="hidden sm:inline text-paper/40" aria-hidden="true">|</span>
+          <span class="font-500">Licensed &amp; Insured</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Signature: tallgrass horizon rule 
+    <svg class="tallgrass absolute bottom-0 left-0 text-limestone-100" viewBox="0 0 1440 26" preserveAspectRatio="none" fill="currentColor" aria-hidden="true">
+      <path d="M0 26 L0 18 C 120 18, 180 6, 280 6 C 380 6, 440 18, 560 18 C 680 18, 740 2, 860 2 C 980 2, 1040 18, 1160 18 C 1280 18, 1340 8, 1440 8 L1440 26 Z
+"/>
+    </svg> -->
+  </section>
+
+  <!-- ============ TRUST STRIP ============ -->
+  <section aria-label="Why homeowners choose us" class="bg-limestone-100">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <li class="reveal">
+          <p class="font-display text-2xl font-600">Since 2018</p>
+          <p class="text-sm text-prairie-700/80 mt-1">Local &amp; family-owned</p>
+        </li>
+        <li class="reveal">
+          <p class="font-display text-2xl font-600">4.8★</p>
+          <p class="text-sm text-prairie-700/80 mt-1">39 Google reviews</p>
+        </li>
+        <li class="reveal">
+          <p class="font-display text-2xl font-600">Free</p>
+          <p class="text-sm text-prairie-700/80 mt-1">No-obligation estimates</p>
+        </li>
+        <li class="reveal">
+          <p class="font-display text-2xl font-600">Hauled Off</p>
+          <p class="text-sm text-prairie-700/80 mt-1">Clippings removed, not mulched</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 scroll-mt-20">
+    <div class="max-w-prose-sm">
+      <p class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-clay-700 font-600">
+        <span class="w-2 h-2 rounded-full bg-sage-600"></span> What we do
+      </p>
+      <h2 class="mt-3 font-display text-3xl sm:text-4xl font-600 leading-tight">One crew for the whole yard, all season long.</h2>
+      <p class="mt-4 text-prairie-700/80 leading-relaxed">From weekly mowing to irrigation and full landscape beds, we handle it so you don't have to juggle three companies. Serving residential, commercial, and HOA properties.</p>
+    </div>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <!-- Card template -->
+      <article class="reveal group overflow-hidden rounded-xl bg-white shadow-soft hover:shadow-lift transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a7870484ce60953f7cf6d8e_service-mowing.webp" alt="A curved front-yard lawn freshly mowed and edged along the driveway of a Wichita-area home." width="800" height="600" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-600">Lawn Mowing &amp; Maintenance</h3>
+          <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Reliable weekly mowing, trimming, and edging. We pick up and haul off your clippings — most crews just mulch and leave.</p>
+        </div>
+      </article>
+
+      <article class="reveal group overflow-hidden rounded-xl bg-white shadow-soft hover:shadow-lift transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a787047c2b10b00947af5eb_service-fertilization.webp" alt="Close-up of thick, healthy green grass blades in full sunlight." width="800" height="600" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-600">Fertilization &amp; Lawn Health</h3>
+          <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Fertilization, weed &amp; insect control, aeration and overseeding — the treatments that turn a nice lawn into an amazing one.</p>
+        </div>
+      </article>
+
+      <article class="reveal group overflow-hidden rounded-xl bg-white shadow-soft hover:shadow-lift transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a787047640a614f858e5a73_service-irrigation.webp" alt="A well-kept green lawn stretching toward a country home, kept healthy by a working irrigation system." width="800" height="600" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-600">Irrigation &amp; Sprinklers</h3>
+          <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Start-ups, backflow testing, repairs, and fall winterization. New system installs available through Dixon Irrigation. We do it right and on time.</p>
+        </div>
+      </article>
+
+      <article class="reveal group overflow-hidden rounded-xl bg-white shadow-soft hover:shadow-lift transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a78704739669d4a4921a6f9_service-cleanup.webp" alt="Landscaped front entry with fresh mulch beds and trimmed plantings after a seasonal cleanup." width="800" height="600" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-600">Seasonal Cleanups</h3>
+          <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Spring cleanups, fall leaf removal, bed refreshes, and gutter cleaning. All leaves and debris hauled away.</p>
+        </div>
+      </article>
+
+      <article class="reveal group overflow-hidden rounded-xl bg-white shadow-soft hover:shadow-lift transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a78704849dff57cea899154_service-landscape.webp" alt="A stone entrance sign reading Country Club Court surrounded by bright red flowers and ornamental grasses." width="800" height="600" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-600">Landscaping &amp; Lighting</h3>
+          <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Planting, beds, sod install &amp; repair, landscape lighting, and Christmas light install and takedown.</p>
+        </div>
+      </article>
+
+      <article class="reveal group overflow-hidden rounded-xl bg-white shadow-soft hover:shadow-lift transition-shadow">
+        <div class="aspect-[4/3] overflow-hidden">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a787047c2b10b00947af5fe_service-commercial.webp" alt="A wide commercial-scale property with crisp mowing stripes maintained to a high standard." width="800" height="600" loading="lazy" class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+        </div>
+        <div class="p-5">
+          <h3 class="font-display text-xl font-600">Commercial &amp; HOA</h3>
+          <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Dependable, scheduled service for businesses and HOA properties — trusted across the Wichita metro.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ORIGIN STORY ============ -->
+  <section id="about" class="bg-prairie-900 text-paper scroll-mt-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div class="reveal order-2 lg:order-1 overflow-hidden rounded-hero shadow-lift">
+        <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a78704787400e8bbe314da9_087f67c90d9b6676a9be6623e32cf456_about-striped-backyard.webp" alt="A backyard lawn with a fanned striped mowing pattern, bordered by young trees and a stone privacy wall." width="1000" height="750" loading="lazy" class="w-full h-full object-cover" />
+      </div>
+      <div class="order-1 lg:order-2">
+        <p class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-sunflower-500 font-600">
+          <span class="w-2 h-2 rounded-full bg-sunflower-500"></span> Our story
+        </p>
+        <h2 class="mt-3 font-display text-3xl sm:text-4xl font-600 leading-tight">Started by a Wichita firefighter. Still family-run.</h2>
+        <p class="mt-5 text-paper/85 leading-relaxed max-w-prose">
+          Flint Hills began in 2018, when a local firefighter picked up professional equipment to care for his own lawn. Neighbors started asking him to take care of theirs — and the rest is history.
+        </p>
+        <p class="mt-4 text-paper/85 leading-relaxed max-w-prose">
+          Today we're a father-and-son operation that employs other local first responders. We've spent years educating ourselves and our team to bring you the best family-owned lawn service in the Wichita area. Give us a call and let us help make your neighbors jealous.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="#estimate" class="inline-flex items-center gap-2 rounded-full bg-sunflower-500 px-6 py-3.5 text-base font-600 text-prairie-900 hover:brightness-105 transition">Get a Free Estimate
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="tel:+13163643913" class="inline-flex items-center gap-2 rounded-full border-2 border-paper/40 px-6 py-3.5 text-base font-600 text-paper hover:bg-paper/10 transition">Call (316) 364-3913</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS (real 3-step) ============ -->
+  <section id="process" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+    <div class="max-w-prose">
+      <p class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-clay-700 font-600">
+        <span class="w-2 h-2 rounded-full bg-sage-600"></span> How it works
+      </p>
+      <h2 class="mt-3 font-display text-3xl sm:text-4xl font-600 leading-tight">A clear path from first call to fresh-cut.</h2>
+    </div>
+    <ol class="mt-12 grid gap-6 md:grid-cols-3">
+      <li class="reveal rounded-xl border border-limestone-100 bg-white p-7 shadow-soft">
+        <span class="font-display text-3xl font-600 text-sunflower-500">01</span>
+        <h3 class="mt-3 font-display text-xl font-600">Request Your Estimate</h3>
+        <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Tell us about your property and what you need. We'll get back to you quickly with a free, no-obligation quote.</p>
+      </li>
+      <li class="reveal rounded-xl border border-limestone-100 bg-white p-7 shadow-soft">
+        <span class="font-display text-3xl font-600 text-sunflower-500">02</span>
+        <h3 class="mt-3 font-display text-xl font-600">We Care for Your Yard</h3>
+        <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Our crew shows up on schedule and does the work right — mowing, treatments, irrigation, and more, done with pride.</p>
+      </li>
+      <li class="reveal rounded-xl border border-limestone-100 bg-white p-7 shadow-soft">
+        <span class="font-display text-3xl font-600 text-sunflower-500">03</span>
+        <h3 class="mt-3 font-display text-xl font-600">We Clean Up &amp; Haul Off</h3>
+        <p class="mt-2 text-sm text-prairie-700/80 leading-relaxed">Clippings and debris are hauled away — not left behind. Your yard looks great and stays that way all season.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ WORK / PROJECTS GALLERY ============ -->
+  <section id="work" class="bg-limestone-100 scroll-mt-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="max-w-prose-sm">
+        <p class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-clay-700 font-600">
+          <span class="w-2 h-2 rounded-full bg-sage-600"></span> Our work
+        </p>
+        <h2 class="mt-3 font-display text-3xl sm:text-4xl font-600 leading-tight">Real Wichita-area yards we keep looking sharp.</h2>
+      </div>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <figure class="reveal col-span-2 row-span-2 overflow-hidden rounded-xl shadow-soft">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a7870484ce60953f7cf6d88_work-field-house.webp" alt="A long, deep-green lawn with striped mowing lines leading up to a home surrounded by mature trees." width="1000" height="1000" loading="lazy" class="h-full w-full object-cover" />
+        </figure>
+        <figure class="reveal overflow-hidden rounded-xl shadow-soft">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a787049becd748dea8e6573_work-pool-grasses.webp" alt="A backyard pool bordered by fresh landscape beds, ornamental grasses, and a stone retaining wall." width="800" height="600" loading="lazy" class="h-full w-full object-cover aspect-square" />
+        </figure>
+        <figure class="reveal overflow-hidden rounded-xl shadow-soft">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a78704939669d4a4921a7ca_work-retaining-wall.webp" alt="A stone retaining wall with freshly mulched beds and newly planted ornamental grasses." width="800" height="600" loading="lazy" class="h-full w-full object-cover aspect-square" />
+        </figure>
+        <figure class="reveal overflow-hidden rounded-xl shadow-soft">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a7870491a91a8112d34b374_work-pond-fountain.webp" alt="Landscaped beds and grasses along a fence line overlooking a pond with a fountain." width="800" height="600" loading="lazy" class="h-full w-full object-cover aspect-square" />
+        </figure>
+        <figure class="reveal overflow-hidden rounded-xl shadow-soft">
+          <img src="https://cdn.prod.website-files.com/68182f9930beb65851c016db/6a7870499debe2783a87f1a7_work-front-entry.webp" alt="A tidy front entry framed by colorful landscape beds and a neatly maintained lawn." width="800" height="600" loading="lazy" class="h-full w-full object-cover aspect-square" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section id="reviews" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 scroll-mt-20">
+    <div class="max-w-prose">
+      <p class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-clay-700 font-600">
+        <span class="w-2 h-2 rounded-full bg-sage-600"></span> Client feedback
+      </p>
+      <h2 class="mt-3 font-display text-3xl sm:text-4xl font-600 leading-tight">What your neighbors say.</h2>
+      <p class="mt-4 text-prairie-700/80">Rated <span class="font-600 text-prairie-900">4.8 out of 5</span> across 39 Google reviews.</p>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-3">
+      <figure class="reveal rounded-xl border border-limestone-100 bg-white p-6 shadow-soft flex flex-col">
+        <div class="flex text-sunflower-500 mb-3" aria-label="5 out of 5 stars">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+        </div>
+        <blockquote class="text-prairie-800 leading-relaxed flex-1">"My lawn just fell short every year, so I switched to Flint Hills Lawn Care. They transformed my lawn from nice to amazing in one season! We now get positive comments about how our lawn looks. Simply the best lawn care company in the Wichita metro area, period."</blockquote>
+        <figcaption class="mt-5 pt-4 border-t border-limestone-100 text-sm"><span class="font-600 text-prairie-900">Darby Milner</span><span class="text-prairie-700/70"> · Google review</span></figcaption>
+      </figure>
+
+      <figure class="reveal rounded-xl border border-limestone-100 bg-white p-6 shadow-soft flex flex-col">
+        <div class="flex text-sunflower-500 mb-3" aria-label="5 out of 5 stars">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+        </div>
+        <blockquote class="text-prairie-800 leading-relaxed flex-1">"We highly recommend this lawn care company. Their crew is always professional, friendly, and helpful, and they take great pride in their work. They handle everything from weekly mowing and treatments to tree care and fall clean-up. Our yard always looks great."</blockquote>
+        <figcaption class="mt-5 pt-4 border-t border-limestone-100 text-sm"><span class="font-600 text-prairie-900">Tammy Dulohery</span><span class="text-prairie-700/70"> · Google review</span></figcaption>
+      </figure>
+
+      <figure class="reveal rounded-xl border border-limestone-100 bg-white p-6 shadow-soft flex flex-col">
+        <div class="flex text-sunflower-500 mb-3" aria-label="5 out of 5 stars">
+          <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg><svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.5l2.6 5.3 5.9.9-4.2 4.1 1 5.8L10 15l-5.3 2.6 1-5.8L1.5 7.7l5.9-.9L10 1.5z"/></svg>
+        </div>
+        <blockquote class="text-prairie-800 leading-relaxed flex-1">"I was in a bad spot with an irrigation pump that was out. Flint Hills came out to check what was going on, confirmed it was the pump, and had it switched right away. Awesome company to work with."</blockquote>
+        <figcaption class="mt-5 pt-4 border-t border-limestone-100 text-sm"><span class="font-600 text-prairie-900">Auggie Jimenez</span><span class="text-prairie-700/70"> · Google review</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="mt-10 grid gap-6 md:grid-cols-2">
+      <figure class="reveal rounded-xl border border-limestone-100 bg-white p-6 shadow-soft">
+        <blockquote class="text-prairie-800 leading-relaxed">"Best lawn care company in the Wichita/Andover area. They do clean and precise work and always make my lawn look great!"</blockquote>
+        <figcaption class="mt-4 text-sm"><span class="font-600 text-prairie-900">DB Grant</span><span class="text-prairie-700/70"> · Google review</span></figcaption>
+      </figure>
+      <figure class="reveal rounded-xl border border-limestone-100 bg-white p-6 shadow-soft">
+        <blockquote class="text-prairie-800 leading-relaxed">"Love this company. Prompt and quality service. Mowing and trimming is impeccable. Also had flower gardens weeded and bushes trimmed."</blockquote>
+        <figcaption class="mt-4 text-sm"><span class="font-600 text-prairie-900">Patty Hamilton</span><span class="text-prairie-700/70"> · Google review</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREA + ESTIMATE FORM ============ -->
+  <section id="areas" class="bg-prairie-900 text-paper scroll-mt-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 grid lg:grid-cols-2 gap-12 lg:gap-16">
+      <!-- Areas -->
+      <div id="estimate" class="scroll-mt-20">
+        <p class="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-sunflower-500 font-600">
+          <span class="w-2 h-2 rounded-full bg-sunflower-500"></span> Serving the Wichita metro
+        </p>
+        <h2 class="mt-3 font-display text-3xl sm:text-4xl font-600 leading-tight">Proudly serving your neighborhood.</h2>
+        <p class="mt-4 text-paper/85 leading-relaxed max-w-prose">Trusted by homeowners, businesses, and HOAs across the metro. If you're nearby and don't see your town, just ask.</p>
+        <ul class="mt-6 flex flex-wrap gap-2.5">
+          <li class="rounded-full border border-paper/25 px-4 py-2 text-sm font-500">Wichita</li>
+          <li class="rounded-full border border-paper/25 px-4 py-2 text-sm font-500">Derby</li>
+          <li class="rounded-full border border-paper/25 px-4 py-2 text-sm font-500">Andover</li>
+          <li class="rounded-full border border-paper/25 px-4 py-2 text-sm font-500">Bel Aire</li>
+          <li class="rounded-full border border-paper/25 px-4 py-2 text-sm font-500">Maize</li>
+          <li class="rounded-full border border-paper/25 px-4 py-2 text-sm font-500">Rose Hill</li>
+        </ul>
+        <div class="mt-8 space-y-3 text-sm text-paper/85">
+          <p class="flex items-center gap-3"><svg class="w-5 h-5 text-sunflower-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>1608 US-54, Andover, KS 67002</p>
+          <p class="flex items-center gap-3"><svg class="w-5 h-5 text-sunflower-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg><a href="tel:+13163643913" class="hover:text-sunflower-500 transition-colors font-600">(316) 364-3913</a></p>
+          <p class="flex items-center gap-3"><svg class="w-5 h-5 text-sunflower-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Monday–Friday · 8:00 AM – 5:00 PM</p>
+        </div>
+      </div>
+
+      <!-- Estimate form (Netlify Forms) -->
+      <div class="rounded-hero bg-paper text-prairie-900 p-6 sm:p-8 shadow-lift">
+        <h3 class="font-display text-2xl font-600">Request a free estimate</h3>
+        <p class="mt-1.5 text-sm text-prairie-700/80">No obligation. We'll get back to you quickly.</p>
+
+        <!-- Netlify Forms placeholder: swap data-netlify + action later -->
+        <form name="estimate" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you" class="mt-6 space-y-4" novalidate>
+          <input type="hidden" name="form-name" value="estimate" />
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-sm font-600 mb-1.5">Name <span class="text-clay-700" aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" required autocomplete="name" class="w-full min-h-[44px] rounded-lg border border-limestone-100 bg-white px-3 py-2.5 text-base focus:border-sage-600" />
+              <p class="err hidden mt-1 text-xs text-clay-700" role="alert"></p>
+            </div>
+            <div>
+              <label for="phone" class="block text-sm font-600 mb-1.5">Phone <span class="text-clay-700" aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel" class="w-full min-h-[44px] rounded-lg border border-limestone-100 bg-white px-3 py-2.5 text-base focus:border-sage-600" />
+              <p class="err hidden mt-1 text-xs text-clay-700" role="alert"></p>
+            </div>
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-600 mb-1.5">Email <span class="text-clay-700" aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" required autocomplete="email" inputmode="email" class="w-full min-h-[44px] rounded-lg border border-limestone-100 bg-white px-3 py-2.5 text-base focus:border-sage-600" />
+            <p class="err hidden mt-1 text-xs text-clay-700" role="alert"></p>
+          </div>
+
+          <div>
+            <label for="service" class="block text-sm font-600 mb-1.5">What do you need?</label>
+            <select id="service" name="service" class="w-full min-h-[44px] rounded-lg border border-limestone-100 bg-white px-3 py-2.5 text-base focus:border-sage-600">
+              <option>Lawn mowing &amp; maintenance</option>
+              <option>Fertilization &amp; lawn health</option>
+              <option>Irrigation / sprinklers</option>
+              <option>Seasonal cleanup</option>
+              <option>Landscaping &amp; lighting</option>
+              <option>Commercial / HOA</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-600 mb-1.5">Tell us about your property <span class="text-prairie-700/60 font-400">(optional)</span></label>
+            <textarea id="message" name="message" rows="3" class="w-full rounded-lg border border-limestone-100 bg-white px-3 py-2.5 text-base focus:border-sage-600"></textarea>
+          </div>
+
+          <button type="submit" class="w-full inline-flex items-center justify-center gap-2 rounded-full bg-sage-600 px-6 py-3.5 text-base font-600 text-paper hover:bg-sage-500 transition disabled:opacity-50 disabled:cursor-not-allowed">
+            <span class="btn-label">Request My Free Estimate</span>
+            <svg class="btn-spinner hidden w-5 h-5 animate-spin" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" opacity=".25"/><path d="M22 12a10 10 0 0 1-10 10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </button>
+          <p id="formStatus" class="text-sm hidden" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="bg-limestone-100">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+      <h2 class="font-display text-3xl sm:text-4xl font-600 leading-tight">Ready to make your neighbors jealous?</h2>
+      <p class="mt-4 text-prairie-700/80 max-w-prose mx-auto">Get a free, no-obligation estimate from a local, family-owned crew that takes pride in every yard.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="#estimate" class="inline-flex items-center gap-2 rounded-full bg-sunflower-500 px-7 py-3.5 text-base font-600 text-prairie-900 shadow-lift hover:brightness-105 transition">Get a Free Estimate
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="tel:+13163643913" class="inline-flex items-center gap-2 rounded-full border-2 border-prairie-900/30 px-7 py-3.5 text-base font-600 text-prairie-900 hover:bg-white transition">Call (316) 364-3913</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-prairie-900 text-paper/80">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="lg:col-span-1">
+        <p class="font-display text-2xl font-600 text-paper">Flint Hills</p>
+        <p class="text-xs uppercase tracking-[0.18em] text-sunflower-500 mt-1">Lawn Care</p>
+        <p class="mt-4 text-sm leading-relaxed max-w-xs">Firefighter-founded, family-run lawn, landscape &amp; irrigation care for the Wichita metro since 2018.</p>
+      </div>
+      <nav aria-label="Services">
+        <h2 class="text-sm font-600 uppercase tracking-wider text-paper">Services</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="#services" class="hover:text-sunflower-500 transition-colors">Mowing &amp; Maintenance</a></li>
+          <li><a href="#services" class="hover:text-sunflower-500 transition-colors">Fertilization &amp; Lawn Health</a></li>
+          <li><a href="#services" class="hover:text-sunflower-500 transition-colors">Irrigation &amp; Sprinklers</a></li>
+          <li><a href="#services" class="hover:text-sunflower-500 transition-colors">Seasonal Cleanups</a></li>
+          <li><a href="#services" class="hover:text-sunflower-500 transition-colors">Landscaping &amp; Lighting</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Company">
+        <h2 class="text-sm font-600 uppercase tracking-wider text-paper">Company</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="#about" class="hover:text-sunflower-500 transition-colors">Our Story</a></li>
+          <li><a href="#work" class="hover:text-sunflower-500 transition-colors">Our Work</a></li>
+          <li><a href="#reviews" class="hover:text-sunflower-500 transition-colors">Reviews</a></li>
+          <li><a href="#areas" class="hover:text-sunflower-500 transition-colors">Service Area</a></li>
+          <li><a href="#estimate" class="hover:text-sunflower-500 transition-colors">Free Estimate</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="text-sm font-600 uppercase tracking-wider text-paper">Get in touch</h2>
+        <ul class="mt-4 space-y-2.5 text-sm">
+          <li><a href="tel:+13163643913" class="hover:text-sunflower-500 transition-colors font-600 text-paper">(316) 364-3913</a></li>
+          <li>1608 US-54, Andover, KS 67002</li>
+          <li>Mon–Fri · 8:00 AM – 5:00 PM</li>
+        </ul>
+        <div class="mt-4 flex gap-3">
+          <a href="https://www.facebook.com/flinthillslawn/" aria-label="Flint Hills Lawn Care on Facebook" class="inline-flex w-10 h-10 items-center justify-center rounded-full border border-paper/25 hover:border-sunflower-500 hover:text-sunflower-500 transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-2.9h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6v1.8h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/flinthillslawn/" aria-label="Flint Hills Lawn Care on Instagram" class="inline-flex w-10 h-10 items-center justify-center rounded-full border border-paper/25 hover:border-sunflower-500 hover:text-sunflower-500 transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-paper/15 flex flex-col sm:flex-row gap-2 justify-between text-xs text-paper/60">
+      <p>© <span id="year"></span> Flint Hills Lawn Care, Inc. All rights reserved.</p>
+      <p>Licensed &amp; Insured · Serving the Wichita Metro</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE ACTION BAR ============ -->
+<div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-paper/95 backdrop-blur border-t border-limestone-100 px-3 py-2.5 flex gap-2" style="padding-bottom:max(0.625rem,env(safe-area-inset-bottom))">
+  <a href="tel:+13163643913" class="flex-1 inline-flex items-center justify-center gap-2 rounded-full border-2 border-sage-600 px-4 py-3 text-sm font-600 text-sage-600">
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+    Call
+  </a>
+  <a href="#estimate" class="flex-[1.4] inline-flex items-center justify-center rounded-full bg-sage-600 px-4 py-3 text-sm font-600 text-paper">Free Estimate</a>
+</div>
+<div class="md:hidden h-16" aria-hidden="true"></div>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('hidden') === false;
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  mobileMenu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => { mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded','false'); })
+  );
+
+  // Scroll reveal (respects reduced-motion via CSS; stagger via IO)
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const reveals = document.querySelectorAll('.reveal');
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    reveals.forEach(el => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('in'), (i % 4) * 40); // 40ms stagger
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    reveals.forEach(el => io.observe(el));
+  }
+
+  // Form: inline validation on blur + submit feedback
+  const form = document.querySelector('form[name="estimate"]');
+  const status = document.getElementById('formStatus');
+  const setError = (input, msg) => {
+    const p = input.parentElement.querySelector('.err');
+    if (!p) return;
+    if (msg) { p.textContent = msg; p.classList.remove('hidden'); input.setAttribute('aria-invalid','true'); input.classList.add('border-clay-700'); }
+    else { p.textContent = ''; p.classList.add('hidden'); input.removeAttribute('aria-invalid'); input.classList.remove('border-clay-700'); }
+  };
+  const validate = (input) => {
+    if (input.hasAttribute('required') && !input.value.trim()) { setError(input, 'This field is required.'); return false; }
+    if (input.type === 'email' && input.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value)) { setError(input, 'Enter a valid email address.'); return false; }
+    if (input.type === 'tel' && input.value && input.value.replace(/\D/g,'').length < 7) { setError(input, 'Enter a valid phone number.'); return false; }
+    setError(input, ''); return true;
+  };
+  form.querySelectorAll('input[required], input[type="email"], input[type="tel"]').forEach(inp => {
+    inp.addEventListener('blur', () => validate(inp));
+  });
+
+  form.addEventListener('submit', (e) => {
+    // Validate all
+    const fields = form.querySelectorAll('input[required], input[type="email"], input[type="tel"]');
+    let firstInvalid = null;
+    fields.forEach(inp => { if (!validate(inp) && !firstInvalid) firstInvalid = inp; });
+    if (firstInvalid) {
+      e.preventDefault();
+      firstInvalid.focus(); // focus-management: first invalid field
+      status.textContent = 'Please fix the highlighted fields and try again.';
+      status.className = 'text-sm text-clay-700';
+      return;
+    }
+    // Loading state (Netlify handles actual POST → /thank-you)
+    const btn = form.querySelector('button[type="submit"]');
+    btn.disabled = true;
+    btn.querySelector('.btn-label').textContent = 'Sending…';
+    btn.querySelector('.btn-spinner').classList.remove('hidden');
+    status.textContent = 'Sending your request…';
+    status.className = 'text-sm text-sage-600';
+    // Note: with data-netlify the browser submits normally to /thank-you.
+  });
+</script>
+</body>
+</html>
